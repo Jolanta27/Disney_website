@@ -31,8 +31,22 @@ export default ImgSlider
 const Carousel = styled(Slider)`
 margin-top: 20px;
 
+ul li button {
+    &:before {
+        font-size: 10px;
+        color: white;
+    }
+}
+
+li.slick-active button:before {
+    color: white;
+}
+
 .slick-list {
     overflow: visible;
+}
+button {
+    z-index: 1
 }
 `
 const Wrap = styled.div`
